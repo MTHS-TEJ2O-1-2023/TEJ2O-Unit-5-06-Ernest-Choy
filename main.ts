@@ -8,7 +8,7 @@
 // variables
 let distanceToTarget: number = 0
 
-// set up 
+// set up
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 basic.pause(1000)
@@ -16,7 +16,7 @@ basic.pause(1000)
 // find distance
 input.onButtonPressed(Button.A, function () {
   basic.clearScreen()
-  distanceToTarget - sonar.ping(
+  distanceToTarget = sonar.ping(
     DigitalPin.P1,
     DigitalPin.P2,
     PingUnit.Centimeters
